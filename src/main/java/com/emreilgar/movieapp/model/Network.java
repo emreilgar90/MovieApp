@@ -1,6 +1,5 @@
 package com.emreilgar.movieapp.model;
 
-import com.emreilgar.movieapp.utility.data.CountryData;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -8,7 +7,7 @@ import lombok.*;
 @Setter
 @ToString
 @RequiredArgsConstructor
-@Builder
+//@Builder
 @Entity
 @Table(name = "network")
 public class Network {
@@ -23,11 +22,5 @@ public class Network {
     @OneToOne(mappedBy = "network")
     private Show show;
 
-    public Network(Long id, String name, Country country, String officialSite, Show show) {
-        this.id = id;
-        this.name = name;
-        this.country = country;
-        this.officialSite = officialSite;
-        this.show = show;
-    }
+
 }

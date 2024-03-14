@@ -3,9 +3,6 @@ package com.emreilgar.movieapp.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-
-
-
 @Getter
 @Setter
 @ToString
